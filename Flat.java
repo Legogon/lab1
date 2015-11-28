@@ -2,18 +2,18 @@ package dz_9;
 //
 public class Flat extends Menu {
 	
-	int TotalCoast;
+	int totalCoast;
 	
 	public Flat(int index, int space, int coast){
-		Index = index;
-		Space = space;
-		Coast = coast;
-		TotalCoast = totalCoast();
+		this.index = index;
+		this.space = space;
+		this.coast = coast;
+		totalCoast = totalCoast();
 	}
 	
 	//расчет стоимости квартиры
 	public int totalCoast(){
-		int totalcoast = Coast * Space;
+		int totalcoast = coast * space;
 		return totalcoast;
 	}
 

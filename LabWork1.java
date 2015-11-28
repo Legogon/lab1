@@ -13,20 +13,16 @@ public class LabWork1 {
         int total = inTotal.nextInt();
 
         //Создаем массивы-объекты
-
         Flat[] flat = new Flat[total];
 
         //заполняем основной массив
         Menu menu = new Menu();
-        Flat[] flat2 = menu.createMass(flat);
-        for (int i = 0; i < flat2.length; i++) {
-            System.out.println(flat2[i].Index);
-        }
+        Flat[] flatFinal = menu.createMass(flat);
 
         //Заполняем массив объектами, удовлетворяющими запросу
         System.out.println("Введите стоимость максимальную для вас стоимость");
         int maxCoast = inTotal.nextInt();
         
-        menu.createMassFil(flat, maxCoast);//      
+        menu.createMassFil(flatFinal, maxCoast);//      
     }
 }
